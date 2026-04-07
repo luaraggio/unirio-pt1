@@ -89,6 +89,20 @@ body {
     padding: 30px;
     border-radius: 12px;
     margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0;
 }
 
 /* GRID */
@@ -109,7 +123,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.01);
 }
 
 .card h3 {
@@ -118,9 +132,16 @@ body {
 
 .card p {
     color: #555;
+    line-height: 1.4;
 }
 
-/* BOTÕES */
+/* CARD DESTACADO */
+.card.highlight {
+    border-left: 6px solid #0055aa;
+    background-color: #f5f9ff;
+}
+
+/* BOTÕES (caso use futuramente) */
 .card a {
     display: inline-block;
     margin-top: 10px;
@@ -133,17 +154,14 @@ body {
 
 /* BADGE */
 .badge {
+    display: inline-block;
     background-color: #ffcc00;
     color: black;
     font-size: 12px;
-    padding: 3px 8px;
+    font-weight: bold;
+    padding: 4px 8px;
     border-radius: 5px;
-    margin-left: 8px;
-}
-
-/* CARD DESTACADO */
-.card.highlight {
-    border-left: 6px solid #0055aa;
+    margin-bottom: 8px;
 }
 
 /* FOOTER */
@@ -160,7 +178,7 @@ body {
     margin: 0 5px;
 }
 
-/* STATS */
+/* STATS (caso queira usar depois) */
 .stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -185,4 +203,28 @@ body {
 .stat-card p {
     margin: 5px 0 0;
     color: #555;
+}
+
+/* ESPAÇAMENTO DE TÍTULOS */
+.content h2 {
+    margin-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
 }
