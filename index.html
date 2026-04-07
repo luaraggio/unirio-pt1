@@ -9,89 +9,117 @@
 
 <body>
 
-    <header class="header">
-        <div class="logo">
-            <img src="assets/logo_unirio_branca.png" alt="Logo branca da UNIRIO">
-        </div>
+<header class="header">
+    <div class="logo">
+        <img src="assets/logo_unirio_branca.png" alt="Logo UNIRIO">
+    </div>
+    <div class="title">
+        <h1>Central de Oportunidades</h1>
+    </div>
+</header>
 
-        <div class="title">
-            <h1>Central de Oportunidades</h1>
-        </div>
-    </header>
+<main class="main">
+    <div class="layout">
 
-
-
-    <main class="main">
-        <!-- conteúdo da página -->
-        <div class="layout">
-        <!-- NAVBAR (lateral esquerda) -->
-            <nav class="nav-bar">
-                <h2>Menu</h2>
-                <ul>
+        <!-- NAVBAR -->
+        <nav class="nav-bar">
+            <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="pages/estagio.html">Estágios</a></li>
                 <li><a href="pages/monitoria.html">Monitoria</a></li>
                 <li><a href="pages/pesquisa.html">Pesquisa</a></li>
                 <li><a href="pages/extensao.html">Extensão</a></li>
-                <li><a href="pages/projetos.html">Projetos</a></li>
                 <li><a href="pages/perfil.html">Perfil do Aluno</a></li>
-                </ul>
-            </nav>
+            </ul>
+        </nav>
 
+        <!-- CONTEÚDO -->
+        <section class="content">
+            <div class="container">
 
-            <!-- CONTEÚDO -->
-            <section class="conteudo">
-                <section class="hero" id="inicio">
-                    <div class="hero-text">
-                        <h2 class="hero-title">Conectando estudantes às oportunidades da UNIRIO</h2>
-                        <p class="hero-subtitle">
-                            Encontre vagas de monitoria, estágios, projetos de pesquisa e extensão em um só lugar, com foco na comunidade acadêmica da UNIRIO.
-                        </p>
-                    </div>
+                <!-- HERO PRINCIPAL -->
+                <div class="hero">
+                    <h2>Conectando estudantes às oportunidades da UNIRIO</h2>
+                    <p>
+                        Encontre vagas de monitoria, estágios, projetos de pesquisa e extensão em um só lugar,
+                        com foco na comunidade acadêmica da UNIRIO.
+                    </p>
+                </div>
 
-                    <div class="hero-highlight">
-                        <strong class="highlight-title">Destaque do semestre</strong>
-                        <p>A UNIRIO publicou edital de seleção de bolsistas de monitoria para 2026 com 460 bolsas e inscrições até 6 de fevereiro, mostrando como a monitoria pode ser uma função central em um sistema de oportunidades estudantis.</p>
-                    </div>
-                </section>
+                <!-- DESTAQUE -->
+                <div class="card highlight">
+                    <h3>Destaque do semestre</h3>
+                    <p>
+                        A UNIRIO publicou edital de seleção de bolsistas de monitoria para 2026 com 460 bolsas
+                        e inscrições até 6 de fevereiro, mostrando como a monitoria pode ser uma função central
+                        em um sistema de oportunidades estudantis.
+                    </p>
+                </div>
 
-                <h2 class="sections-title">Categorias em destaque</h2>
-                <section class="cards-grid">
-                    <article class="card" id="monitoria">
+                <!-- CATEGORIAS -->
+                <h2 style="margin-top: 30px;">Categorias em destaque</h2>
+
+                <div class="cards-grid">
+
+                    <div class="card">
                         <span class="badge">Monitoria</span>
                         <h3>Monitorias em disciplinas básicas</h3>
-                        <p>A universidade oferece monitoria como instrumento pedagógico da graduação, com atuação em disciplinas e apoio ao ensino.</p>
-                        <div class="card-footer">Ex.: Cálculo, Programação, Arquitetura de Computadores</div>
-                    </article>
+                        <p>
+                            A universidade oferece monitoria como instrumento pedagógico da graduação,
+                            com atuação em disciplinas e apoio ao ensino.
+                        </p>
+                        <p><strong>Ex.:</strong> Cálculo, Programação, Arquitetura de Computadores</p>
+                    </div>
 
-                    <article class="card" id="extensao">
+                    <div class="card">
                         <span class="badge">Extensão</span>
                         <h3>Projetos de extensão</h3>
-                        <p>A universidade também reúne programas e bolsas de extensão e cultura, reforçando a relevância dessa categoria no protótipo.</p>
-                        <div class="card-footer">Projetos sociais com certificado e horas complementares</div>
-                    </article>
+                        <p>
+                            Programas e bolsas de extensão e cultura, reforçando a relevância dessa categoria
+                            no sistema.
+                        </p>
+                        <p><strong>Ex.:</strong> Projetos sociais com certificado</p>
+                    </div>
 
-                    <article class="card" id="estagio">
+                    <div class="card">
                         <span class="badge">Estágio</span>
                         <h3>Vagas de estágio</h3>
-                        <p>A UNIRIO tem um setor específico para estágios, mas as vagas não estão integradas ao Portal do Aluno.</p>
-                        <div class="card-footer">Oportunidades em empresas parceiras e órgãos públicos</div>
-                    </article>
+                        <p>
+                            A UNIRIO possui um setor específico para estágios, mas as vagas não estão
+                            centralizadas.
+                        </p>
+                        <p><strong>Ex.:</strong> Empresas parceiras e órgãos públicos</p>
+                    </div>
 
-                    <article class="card" id="pesquisa">
+                    <div class="card">
                         <span class="badge">Pesquisa</span>
                         <h3>Oportunidades de pesquisa</h3>
-                        <p>A universidade tem um programa de iniciação científica, mas as vagas não estão integradas ao Portal do Aluno.</p>
-                        <div class="card-footer">Bolsas de Iniciação Científica e projetos de pesquisa</div>
-                    </article>
-                </section>
+                        <p>
+                            Programas de iniciação científica com bolsas e projetos acadêmicos.
+                        </p>
+                        <p><strong>Ex.:</strong> PIBIC e projetos científicos</p>
+                    </div>
 
-                <section class="info-board" id="sobre">
+                </div>
+
+                <!-- SOBRE -->
+                <div class="card" style="margin-top: 30px;">
                     <h2>Sobre o sistema</h2>
-                    <p>O sistema de oportunidades estudantis da UNIRIO é um protótipo que visa centralizar informações sobre monitoria, estágio, pesquisa e extensão para os estudantes. Ele foi desenvolvido com base em uma análise das categorias de oportunidades disponíveis na universidade, destacando a monitoria como a categoria mais relevante.</p>
-                    <p>A proposta do sistema é reunir em uma interface web básica oportunidades de monitoria, estágio, pesquisa e extensão, ajudando o estudante a encontrar informações acadêmicas em um único ambiente. </p>
-                </section>
-    </main>
+                    <p>
+                        O sistema de oportunidades estudantis da UNIRIO é um protótipo que visa centralizar
+                        informações sobre monitoria, estágio, pesquisa e extensão para os estudantes.
+                    </p>
+                    <p>
+                        A proposta é reunir em uma interface web simples todas essas oportunidades,
+                        permitindo que o aluno encontre informações acadêmicas em um único ambiente.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+</main>
 
 <footer class="page-footer">
     <p>
