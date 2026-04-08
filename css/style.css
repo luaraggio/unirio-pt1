@@ -1,4 +1,3 @@
-/* RESET */
 body {
     font-family: sans-serif;
     background-color: #d2c8c8;
@@ -8,7 +7,6 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
 .header {
     display: flex;
     align-items: center;
@@ -33,7 +31,6 @@ body {
     color: white;
 }
 
-/* LAYOUT */
 .main {
     flex: 1;
     display: flex;
@@ -44,7 +41,6 @@ body {
     width: 100%;
 }
 
-/* NAVBAR */
 .nav-bar {
     width: 220px;
     background-color: #003366;
@@ -70,19 +66,16 @@ body {
     padding-left: 25px;
 }
 
-/* CONTEÚDO */
 .content {
     flex: 1;
     padding: 30px;
 }
 
-/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* HERO */
 .hero {
     background: linear-gradient(135deg, #003366, #0055aa);
     color: white;
@@ -105,15 +98,14 @@ body {
     margin: 0;
 }
 
-/* GRID */
 .cards-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
+
 }
 
-/* CARDS */
 .card {
     background-color: white;
     border-radius: 10px;
@@ -141,7 +133,6 @@ body {
     background-color: #f5f9ff;
 }
 
-/* BOTÕES (caso use futuramente) */
 .card a {
     display: inline-block;
     margin-top: 10px;
@@ -152,7 +143,6 @@ body {
     border-radius: 5px;
 }
 
-/* BADGE */
 .badge {
     display: inline-block;
     background-color: #ffcc00;
@@ -164,7 +154,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* FOOTER */
 .page-footer {
     background-color: #003366;
     color: white;
@@ -178,7 +167,6 @@ body {
     margin: 0 5px;
 }
 
-/* STATS (caso queira usar depois) */
 .stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -205,12 +193,10 @@ body {
     color: #555;
 }
 
-/* ESPAÇAMENTO DE TÍTULOS */
 .content h2 {
     margin-top: 20px;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .layout {
         flex-direction: column;
@@ -229,7 +215,6 @@ body {
     }
 }
 
-/* GRID DO PERFIL */
 .profile-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -244,7 +229,6 @@ body {
     font-size: 14px;
 }
 
-/* ESPAÇAMENTO ENTRE CARDS DO PERFIL */
 .card + .card {
     margin-top: 20px;
 }
